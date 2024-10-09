@@ -1,0 +1,47 @@
+Merge Sort:
+
+The initial array: [16, 21, 11, 8, 12, 22]
+
+Step 1: Divide the array
+Merge sort works by dividing the array into smaller subarrays until each subarray contains only one element.
+
+[16, 21, 11, 8, 12, 22]
+Split into:
+Left: [16, 21, 11]
+Right: [8, 12, 22]
+Left [16, 21, 11] is split into:
+Left: [16]
+Right: [21, 11]
+Right [21, 11] is split into:
+Left: [21]
+Right: [11]
+
+Right [8, 12, 22] is split into:
+Left: [8]
+Right: [12, 22]
+Right [12, 22] is split into:
+Left: [12]
+Right: [22]
+
+Step 2: Merge the arrays
+
+Now, start merging the subarrays in sorted order.
+
+[21] and [11] are merged: [11, 21]
+[16] and [11, 21] are merged: [11, 16, 21]
+[12] and [22] are merged: [12, 22]
+[8] and [12, 22] are merged: [8, 12, 22]
+
+Step 3: Final merge
+
+Finally, merge the two sorted subarrays [11, 16, 21] and [8, 12, 22]: [8, 11, 12, 16, 21, 22]
+
+------------------------------------
+
+Big-O Notation:
+The time complexity for Merge Sort is:
+Best case: O(n log n)
+Average case: O(n log n)
+Worst case: O(n log n)
+
+Merge Sort has the same time complexity in all cases (best, average, and worst) because it consistently divides the array and merges it in logarithmic time.
